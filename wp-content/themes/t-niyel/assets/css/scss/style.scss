@@ -1,0 +1,100 @@
+@import "breakpoints";
+@import "fonts";
+@import "var";
+@import "utlities";
+@import "text";
+@import "text_custom";
+@import "mixin";
+@import "button";
+@import "map";
+@import "card";
+@import "mansory";
+@import "globals";
+@import "components";
+@import "mask";
+@import "animations";
+@import "animation_custom";
+@import "slick";
+@import "header";
+@import "footer";
+@import "pages/homepage";
+@import "pages/who_we_are";
+@import "pages/who_we_are_team";
+@import "pages/our_expertise";
+@import "pages/impact";
+@import "pages/ressource_file";
+@import "pages/our_blog";
+@import "pages/single";
+@import "pages/our_approach";
+@import "pages/shaping_change";
+@import "pages/adg";
+@import "pages/join_us";
+@import "pages/career";
+@import "responsive";
+
+a{
+  text-decoration: none;
+}
+
+body{
+  font-family: $font-primary;
+  overflow-x: hidden;
+}
+
+.kl-bg-body{
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  &.kl-bg-gradient{
+    background: linear-gradient(180deg, #F78C0A 0.55%, #F9B500 15.28%, #C2CC00 31.77%, #4A9CE7 55.97%, #715CAB 77.09%, #5762C7 99.45%);
+  }
+  @media (max-width: 1280px) {
+    padding: 20px;
+  }
+  @include media-breakpoint-down(xl){
+    padding: 15px;
+  }
+  &.kl-bg-gradient-second{
+    background: linear-gradient(357.39deg, #C2CC00 10.05%, #F9B500 89.78%);
+  }
+  &.kl-bg-gradient-tertiary{
+    background: linear-gradient(178deg, #F78C0A 0.55%, #F9B500 30%, #C2CC00 60%, #4A9CE7 99.97%);
+  }
+  &.kl-bg-gradient-quartenary{
+    background: linear-gradient(178deg, #F78C0A 0.55%, #F9B500 30%, #C2CC00 100%);
+  }
+}
+
+#chartdiv{
+  width: 100%;
+  height: 100%;
+}
+
+.kl-wrapper-content-body{
+ border-radius: 30px;
+ position: relative;
+ z-index: 50;
+  &.kl-after-blue{
+    &:after{
+      background: url(../images/homepage/after-blue-body.svg) no-repeat center/contain;
+    }
+  }
+ &:after{
+   position: absolute;
+   content: "";
+   width: 274px;
+   height: 50px;
+   background: url(../images/homepage/scrible-body.png) no-repeat center/contain;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: -25px;
+   opacity: 0.3;
+   @include media-breakpoint-down(md){
+     width: 122px;
+     height: 23px;
+     bottom: -12.5px;
+   }
+ }
+}

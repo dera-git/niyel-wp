@@ -1,0 +1,442 @@
+.kl-sect-who-we-are-3{
+    margin-top: 96px;
+    @include media-breakpoint-down(md){
+        margin-bottom: 60px;
+    }
+    .kl-bg-form-white{
+        width: 70%;
+        @include media-breakpoint-down(md){
+            width: 100%;
+            height: 65%;
+        }
+    }
+    .kl-writing-machine{
+        font-family: $font_third;
+    }
+    .kl-group-img-niyel{
+        padding-bottom: 0;
+        .kl-dots-img-niyel{
+            bottom: -90px;
+        }
+    }
+}
+
+.kl-decor-team{
+    position: absolute;
+    left: -15px;
+    width: 46px;
+    @include media-breakpoint-down(sm){
+        display: none;
+    }
+}
+.kl-sect-list-categories{
+    background: url(../images/teams/bg_cat.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @include media-breakpoint-down(xl){
+        background-size: cover;
+    }
+}
+.kl-nav-filter{
+    padding: 54px 0 63px;
+    p{
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-weight: $medium;
+        text-transform: uppercase;
+    }
+}
+.kl-nav-filter-content{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    @include media-breakpoint-down(md){
+        flex-direction: column;
+    }
+    li{
+        padding-right: 30px;
+        @include media-breakpoint-down(xl){
+            padding-right: 20px;
+        }
+        @include media-breakpoint-down(md){
+            padding-right: 0;
+            padding-bottom: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: $gray_secondary;
+            font-size: 24px;
+            font-weight: $medium;
+            position: relative;
+            @include media-breakpoint-down(xl){
+                font-size: 16px;
+            }
+            &:after{
+                position: absolute;
+                content: "";
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -16px;
+                width: 0;
+                max-width: 100%;
+                height: 9px;
+                background: url(../images/svg_anim/line-scrible-head.svg) no-repeat center/contain;
+                opacity: 0;
+                transition: all ease 1s;
+            }
+            &:hover, &.active{
+                color: $yellow_secondary;
+                &:after{
+                width: 107px;
+                opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+.kl-sect-categories{
+    margin-top: 48px;
+    margin-bottom: 176px;
+    @include media-breakpoint-down(xl){
+        margin-bottom: 76px;
+    }
+}
+.kl-link-social{
+    margin-left: 28px;
+    a{
+        margin-right: 18px;
+    }
+}
+.kl-function-team{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: $regular;
+    color: $blue_primary;
+}
+.kl-desc-wwa-team{
+    padding: 70px;
+    // background: url(../images/teams/bg_left.svg);
+    background: $white;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    &.kl-border-right{
+        border-top-right-radius: 40%;
+    }
+    &.kl-border-left{
+        border-top-left-radius: 40%;
+    }
+    @include media-breakpoint-down(md){
+        padding: 10px;
+        border-radius: 0% !important;
+    }
+}
+
+.kl-img-team{
+    .kl-img-left{
+        position: relative;
+        left: -50px;
+        z-index: 2;
+        @include media-breakpoint-down(md){
+            position: static;
+            left: 0;
+        }
+    }
+    .kl-img-right{
+        position: relative;
+        right: -50px;
+        z-index: 2;
+        @include media-breakpoint-down(md){
+            position: static;
+            right: 0;
+        }
+    }
+    &.kl-decor-top{
+        .kl-decor{
+            position: absolute;
+            top: -60px;
+            right: 0;
+            z-index: -1;
+        }
+    }
+    &.kl-decor-bottom{
+        .kl-decor{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 1;
+            @include media-breakpoint-down(lg){
+                bottom: -70px;
+            }
+            @include media-breakpoint-down(md){
+                bottom: 0;
+                right: 0;
+            }
+            &.kl-decor-bt-custom{
+                bottom: -70px;
+                right: 0;
+            }
+            @include media-breakpoint-down(md){
+                z-index: -1;
+            }
+        }
+    }
+    &.kl-decor-bottom-2{
+        .kl-decor{
+            position: absolute;
+            bottom: -60px;
+            right: 25px;
+            z-index: 0;
+            &.kl-decor-bt-custom{
+                bottom: -70px;
+                right: 0;
+            }
+            @include media-breakpoint-down(md){
+                z-index: -1;
+            }
+        }
+    }
+}
+//global
+.kl-top-20{
+    top: 20px;
+}
+.kl-arrow-down-funky{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background: url(../../../images/teams/Arrow-downfunky2.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 36px;
+        height: 146px;
+        top: 40%;
+        right: -70px;
+        @include media-breakpoint-down(xl){
+            right: -20px;
+        }
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+    }
+}
+.kl-scribbles-scribbles{
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background: url(../images/teams/scribbles-scribbles-42.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 135px;
+        height: 101px;
+        bottom: -50px;
+        right: -70px;
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+    }
+}
+
+.kl-img-mask{
+    position: relative;
+    .kl-bg-yellow{
+        position: absolute;
+        top: 0;
+    }
+}
+
+.kl-mask-yellow{
+    img{
+        max-width: 450px;
+        width: 100%;
+    }
+    &::after{
+        content: "";
+        background: url(../images/teams/yellow.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        max-width: 450px;
+        top: 0;
+        left: 2px;
+        z-index: -1;
+        @include media-breakpoint-down(xl){
+            top: 0;
+            left: 0;
+        }
+    }
+    .kl-mask{
+        -webkit-mask-image: url(../images/teams/yellow.svg);
+        mask-image: url(../images/teams/yellow.svg);
+        -webkit-mask-position: 0px 0px;
+        mask-position: bottom;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+    }
+}
+.kl-mask-blue{
+    img{
+        max-width: 450px;
+        width: 100%;
+    }
+    &::after{
+        content: "";
+        background: url(../images/teams/Mask_group_1.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: contain;
+        width: 100%;
+        height: 330px;
+        top: 0px;
+        left: 0;
+        z-index: -1;
+        @include media-breakpoint-down(lg){
+            height: 230px;
+        }
+    }
+    .kl-mask{
+        -webkit-mask-image: url(../images/teams/blue.svg);
+        mask-image: url(../images/teams/blue.svg);
+        -webkit-mask-position: 0px 0px;
+        mask-position: bottom;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+    }
+}
+
+.kl-mask-orange{
+    img{
+        max-width: 450px;
+        width: 100%;
+    }
+    &::after{
+        content: "";
+        background: url(../images/teams/orange.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: contain;
+        width: 100%;
+        height: 100%;
+        max-width: 450px;
+        top: 20px;
+        left: 0;
+        z-index: -1;
+        @include media-breakpoint-down(xl){
+            top: 20px;
+            left: 0;
+        }
+        @include media-breakpoint-down(lg){
+            top: 10px;
+            left: 0;
+        }
+    }
+    .kl-mask{
+        -webkit-mask-image: url(../images/teams/3.svg);
+        mask-image: url(../images/teams/3.svg);
+        -webkit-mask-position: -70px -10px;
+        mask-position: bottom;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        margin-left: 80px;
+    }
+}
+
+.kl-mask-green{
+    img{
+        max-width: 415px;
+        width: 100%;
+    }
+    &::after{
+        content: "";
+        background: url(../images/teams/Mask_group_2.png);
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: contain;
+        width: 100%;
+        height: 350px;
+        top: -50px;
+        left: 50px;
+        z-index: -1;
+        @include media-breakpoint-down(lg){
+            left: 0;
+        }
+        @include media-breakpoint-down(md){
+            height: 250px;
+        }
+    }
+    .kl-mask{
+        -webkit-mask-image: url(../images/teams/green.svg);
+        mask-image: url(../images/teams/green.svg);
+        -webkit-mask-position: 0px 0px;
+        mask-position: 70px -30px;
+        mask-repeat: no-repeat;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: contain;
+        mask-size: contain;
+        @include media-breakpoint-down(xl){
+            -webkit-mask-image: url(../images/teams/green.svg);
+            mask-image: url(../images/teams/green.svg);
+            -webkit-mask-position: inherit;
+            mask-position: inherit;
+        }
+    }
+}
+.kl-left-mask{
+    left: -30px;
+    z-index: 1;
+    @include media-breakpoint-down(md){
+        left: inherit;
+    }
+}
+.kl-top-mask{
+    top: 20px;
+    @include media-breakpoint-down(md){
+        top: inherit;
+    }
+}
+.kl-right-mask{
+    right: -30px;
+    z-index: 1;
+    @include media-breakpoint-down(md){
+        right: inherit;
+    }
+}
+.kl-right-2-mask{
+    right: -70px;
+    z-index: 1;
+    @include media-breakpoint-down(md){
+        right: inherit;
+    }
+}
+.kl-top-2-mask{
+    top: 50px;
+    @include media-breakpoint-down(md){
+        top: inherit;
+    }
+}
+.kl-decor-form-1{
+    position: relative;
+    &::after{
+        content: "";
+        background: url(../images/teams/Maskgroup.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        height: 520px;
+        top: -60px;
+        @include media-breakpoint-down(md){
+            height: 330px;
+            top: -30px;
+        }
+    }
+}

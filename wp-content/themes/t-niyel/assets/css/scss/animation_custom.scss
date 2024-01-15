@@ -1,0 +1,71 @@
+@each $color, $value in $theme_colors {
+  .kl-animate-draw-svg-polyline.kl-color-#{$color} {
+    @include fill_polyline($value);
+  }
+  .kl-animate-draw-svg-path.kl-color-#{$color} {
+    @include fill_path($value);
+  }
+  .kl-animate-draw-svg-path.kl-fill-#{$color} {
+    path{
+      fill: #{$value} !important;
+    }
+  }
+}
+
+.cls-2{
+  opacity: 1 !important;
+}
+
+.kl-animate-draw-svg-path{
+  path{
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: draw_svg 10s infinite ease-in-out;
+  }
+}
+
+.kl-animate-polyline-one-by-one{
+  svg, .kl-animate-draw-svg-polyline{
+    &:nth-child(2){
+      polyline{
+        animation-delay: 2s;
+      }
+    }
+    &:nth-child(3){
+      polyline{
+        animation-delay: 3s;
+      }
+    }
+    &:nth-child(4){
+      polyline{
+        animation-delay: 4s;
+      }
+    }
+  }
+}
+
+@for $i from 1 through 16{
+ .kl-animate--#{$i}{
+    polyline, path {
+      animation-delay: #{$i}s !important;
+    }
+  }
+}
+
+.kl-animate-draw-svg-polyline{
+  polyline{
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: draw_svg 10s infinite ease-in-out;
+  }
+  path{
+    fill: transparent;
+    stroke: transparent;
+  }
+}
+
+@keyframes draw_svg_polyline {
+  to{
+    stroke-dashoffset: 0;
+  }
+}

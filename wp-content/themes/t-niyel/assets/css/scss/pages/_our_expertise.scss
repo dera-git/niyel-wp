@@ -1,0 +1,71 @@
+.kl-section-question-expertise{
+  padding-bottom: 35px;
+}
+
+.kl-section-expertise-planing{
+  padding-bottom: 50px;
+  padding-top: 60px;
+  @include media-breakpoint-down(lg){
+    padding-bottom: 35px;
+    padding-top: 35px;
+  }
+}
+
+.kl-section-expertise-list{
+  padding: 50px 0 60px;
+  position: relative;
+  @include media-breakpoint-down(lg){
+    padding: 35px 0 30px;
+  }
+}
+
+.kl-row-card-list-wrap{
+  position: relative;
+  .kl-flush-pointer{
+    position: absolute;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    left: -45px;
+  }
+}
+
+.kl-section-expertise-project{
+  padding: 50px 0 50px;
+  position: relative;
+  z-index: 1;
+  .kl-decor-right-section{
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    z-index: -1;
+  }
+  @include media-breakpoint-down(lg){
+    padding: 35px 0 40px;
+    .kl-decor-right-section{
+      max-width: 50px;
+    }
+  }
+}
+
+.kl-section-expertise-collaborate{
+  padding: 50px 0 86px;
+  @include media-breakpoint-down(lg){
+    padding: 40px 0 50px;
+  }
+}
+
+.kl-text-question-wrap{
+  .kl-question-mark{
+    flex:0 0 auto;
+    max-width: 71px;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: -10px;
+    @include media-breakpoint-down(xl){
+      max-width: 40px;
+    }
+  }
+}
+.kl-cursor-pointer{
+  cursor: pointer;
+}

@@ -1,0 +1,244 @@
+.kl-footer{
+  padding: 62px 0 6px;
+  position: relative;
+  z-index: 2;
+  margin-top: auto;
+  @include media-breakpoint-down(md){
+    padding: 38px 0 5px;
+    text-align: center;
+  }
+  .kl-decor-polka{
+    position: absolute;
+    left: -34px;
+    top: 65%;
+    transform: translateY(-65%);
+  }
+  .kl-infos{
+    font-family: $font_secondary;
+    position: relative;
+    z-index: 5;
+    h3{
+      font-family: $font_secondary;
+      font-size: 36px;
+      font-weight: $bold;
+      line-height: 1.36em;
+    }
+    p{
+      font-weight: $semi_bold;
+      max-width: 322px;
+    }
+  }
+
+  .kl-blockquote{
+    position: relative;
+    .kl-decor{
+      display: inline-block;
+      &.kl-before{
+        position: absolute;
+        top: 5px;
+        left: -55px;
+      }
+      @include media-breakpoint-down(lg){
+        max-width: 35px;
+      }
+      @include media-breakpoint-down(md){
+        &.kl-before{
+          top: -15px;
+          left: -20px;
+        }
+        &.kl-after{
+          position: absolute;
+          bottom: 2px;
+          right: -38px;
+        }
+      }
+      @include media-breakpoint-down(sm){
+        max-width: 21px;
+        &.kl-before{
+          left: -18px;
+        }
+        &.kl-after{
+          bottom: 2px;
+          right: -18px;
+        }
+      }
+    }
+    h3{
+      font-family: $font_secondary;
+      font-size: 36px;
+      font-weight: $bold;
+      line-height: 1.36em;
+    }
+  }
+
+  .dropdown{
+    &.kl-dropdown-custom-bg{
+      .dropdown-menu{
+        max-width: 350px;
+        min-width: 100%;
+      }
+    }
+     .dropdown-item{
+       white-space: normal;
+     }
+    .kl-dropdown-list{
+      h6{
+        @extend %text_18;
+        font-family: $font_secondary;
+        margin-bottom: 12px;
+        font-weight: $bold;
+      }
+      p{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .kl-author{
+    position: relative;
+    .kl-decor{
+      position: absolute;
+      bottom: 5px;
+      left: -84px;
+    }
+    p{
+      @extend %text_18;
+      font-weight: $semi_bold;
+      opacity: 0.7;
+    }
+  }
+
+  .kl-siege{
+    position: relative;
+    z-index: 1;
+    .kl-indication-siege{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      top: 2px;
+      left: -90px;
+      h6{
+        transform: rotate(-16.95deg) translateX(-32px);
+        font-family: $font_third;
+        font-weight: $regular;
+        font-size: 21px;
+        line-height: 1.09em;
+      }
+    }
+    h6{
+      @extend %text_18;
+      font-family: $font_secondary;
+      margin-bottom: 12px;
+      font-weight: $bold;
+    }
+    p{
+      line-height: 1.25em;
+      font-weight: $regular;
+    }
+    .kl-siege-item{
+      p{
+        & + p{
+          margin-top: 23px;
+        }
+      }
+      & + .kl-siege-item{
+        margin-top: 45px;
+      }
+    }
+  }
+
+  .kl-second-footer{
+    padding-top: 27px;
+    opacity: 0.8;
+    position: relative;
+    .kl-copiright{
+      margin-right: 10px;
+      max-width: calc(50% - 10px);
+    }
+    &:before{
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background: $white;
+      @include media-breakpoint-down(md){
+        width: calc(100% + 40px);
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    p, a{
+      @extend %text_14;
+      @include media-breakpoint-down(xl){
+        font-size: 10px !important;
+      }
+    }
+    .kl-privacy{
+      a{
+        margin-right: 31px;
+        transition: all ease 0.5s;
+        &:hover{
+          color: $orange_primary !important;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(lg){
+    .kl-blockquote, .kl-infos{
+      h3{
+        font-size: 27px;
+      }
+    }
+    .kl-siege{
+      .kl-siege-item{
+        & + .kl-siege-item{
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md){
+    .kl-blockquote{
+      h3{
+        font-style: italic;
+      }
+    }
+    .kl-infos{
+      p{
+        max-width: 100%;
+      }
+    }
+    .kl-second-footer{
+      padding-top: 20px;
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    .kl-infos{
+      h3{
+        font-size: 20px;
+      }
+    }
+    .kl-blockquote{
+      max-width: 100%;
+      h3{
+       font-size: 16px;
+      }
+    }
+    .kl-second-footer{
+      .kl-privacy{
+        a{
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.kl-sect-adg{
+    .kl-bg-form-white{
+        width: 57%;
+        @include media-breakpoint-down(lg){
+            width: 65%;
+        }
+        @include media-breakpoint-down(md){
+            width: 100%;
+            height: 44%;
+        }
+    }
+    .kl-group-img-niyel{
+        .kl-dots-img-niyel{
+            bottom: 30px;
+            right: 140px;
+        }
+    }
+    .kl-svg-top{
+        top: 100px;
+        right: -100px;
+        @include media-breakpoint-down(md){
+            top: 30px;
+            right: -80px;
+        }
+        svg{
+            width: 110px;
+        }
+    }
+    .kl-icon-title-adg{
+        width: 59px;
+        margin-right: 15px;
+        margin-left: -30px;
+        @include media-breakpoint-down(md){
+            margin-left: 0;
+        }
+    }
+    h2{
+        @include media-breakpoint-down(md){
+            margin-top: 10px;
+        }
+    }
+}
+.kl-svg-bottom-adg{
+    position: absolute;
+    bottom: -70px;
+    right: 70px;
+}
+.kl-sect-list-projects{
+    background: rgba($white, 0.5);
+    padding: 70px 0 48px;
+}
+.kl-project-items{
+    display: flex;
+    img{
+        max-width: 66px;
+        width: 100%;
+        margin-right: 20px;
+        height: fit-content;
+    }
+    .kl-project-item{
+        h3{
+            font-size: 24px;
+            font-weight: $bold;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 15px;
+            margin: 0;
+        }
+        ul{
+            padding-left: 20px;
+            margin: 0;
+            li{
+                font-size: 15px;
+            }
+        }
+    }
+}
+.kl-see-full{
+    color: $orange_primary;
+    font-weight: $medium;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        color: darken($orange_primary, 10%);
+        transition: all 0.3s ease-in-out;
+    }
+}
+
+.kl-decor-title-interest{
+    display: block;
+    margin-left: 30px;
+    width: 110px;
+}
+.kl-sect-interest{
+    padding: 80px 0 0 0;
+}
+.kl-decor-top-interset{
+    position: absolute;
+    top: -140px;
+    left: -80px;
+    @include media-breakpoint-down(xl){
+        left: -20px;
+        top: -120px;
+    }
+    @include media-breakpoint-down(md){
+        display: none;
+    }
+    svg{
+        @include media-breakpoint-down(xl){
+            width: 120px;
+            display: block;
+            left: -20px;
+            top: 120px;
+        }
+    }
+}
+.kl-w-69{
+    display: block;
+    width: 69px;
+}
+.kl-tr-340{
+    transform: rotate(340deg);
+}
+.kl-svg-decor-scrible{
+    display: block;
+    width: 120px;
+    transform: rotate(50deg);
+    margin-left: -10px;
+    polyline{
+        stroke-width: 12px !important;
+    }
+}
+.kl-mt-150{
+    margin-top: 150px;
+}
+.kl-svg-stroke-w-7{
+    polyline, path{
+        stroke-width: 6px !important;
+    }
+}

@@ -1,0 +1,133 @@
+.kl-sect-our-approach{
+    @include media-breakpoint-down(md){
+        padding: 35px 0 15px;
+    }
+    .kl-content-text{
+        padding: 0 25px;
+        @include media-breakpoint-down(md){
+            padding: 0 0;
+        }
+        p{
+            margin: 0;
+            @include media-breakpoint-down(md){
+                font-size: 16px;
+            }
+        }
+    }
+}
+.kl-sect-our-studio{
+    padding: 50px 0 100px;
+    .kl-content-text{
+        padding-right: 30px;
+    }
+    .kl-img-our-approach{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    .kl-decor-our-approach{
+        position: absolute;
+        top: -50px;
+        right: -50px;
+    }
+}
+.kl-sect-our-approach-video{
+    background: url(../images/our_approach/bg_white.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: right;
+    padding: 90px 0;
+    .kl-sect-content{
+        position: relative;
+        z-index: 1;
+        .kl-img-principale{
+            box-shadow: 0px 10.3157px 30.9472px 5.15787px rgba(42, 36, 34, 0.1);
+            border-radius: 5.15787px;
+            transform: matrix(1, -0.02, 0.02, 1, 0, 0);
+            position: relative;
+            z-index: 1;
+        }
+        .kl-content-text{
+            margin-top: 30px;
+            position: relative;
+            z-index: 1;
+            max-width: 450px;
+            margin-left: 90px;
+            @include media-breakpoint-down(md){
+                margin-left: 0;
+            }
+            p{
+                color: $white;
+                font-size: 20px;
+                font-weight: $bold;
+                @include media-breakpoint-down(md){
+                    font-size: 16px;
+                }
+            }
+            .kl-decor-arrow{
+                position: absolute;
+                top: -50px;
+                left: -60px;
+                width: 50px;
+                @include media-breakpoint-down(md){
+                    display: none;
+                }
+            }
+        }
+        .kl-bg-svg-blue{
+            position: absolute;
+            bottom: -70px;
+            left: -70px;
+            z-index: 0;
+            @include media-breakpoint-down(xl){
+                left: -20px;
+            }
+            @include media-breakpoint-down(md){
+                left: -10px;
+            }
+        }
+        .kl-player-video{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            @include media-breakpoint-down(xl){
+                top: -50px;
+            }
+        }
+        &::after{
+            content: "";
+            background: url(../images/our_approach/polka.svg);
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 190px;
+            height: 145px;
+            @include media-breakpoint-down(md){
+                display: none;
+            }
+        }
+        .kl-video-approach{
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+.kl-svg-top{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -40px;
+    svg{
+        max-width: 160px;
+        width: 100%;
+    }
+}

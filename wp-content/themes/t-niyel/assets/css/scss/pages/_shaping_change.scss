@@ -1,0 +1,189 @@
+.kl-list-cat-shaping{
+    .kl-list-cat-items{
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
+        }
+        .kl-list-cat-item{
+            margin: 0 40px;
+            @include media-breakpoint-down(lg){
+                margin: 0 0;
+            }
+            a{
+                text-decoration: none;
+                color: $gray_secondary;
+                font-size: 16px;
+                font-weight: $medium;
+                transition: all 0.3s ease-in-out;
+                svg{
+                    margin-right: 15px;
+                }
+            }
+            &:hover, &.active{
+                a{
+                    color: $black;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            &.kl-svg-blue-secondary{
+                a{
+                    svg{
+                        path{
+                            fill: $blue_secondary;
+                        }
+                    }
+                }
+            }
+            &.kl-svg-yellow-secondary{
+                a{
+                    svg{
+                        path{
+                            fill: $yellow_secondary;
+                        }
+                    }
+                }
+            }
+            &.kl-svg-blue-fourth{
+                a{
+                    svg{
+                        path{
+                            fill: $blue_fourth;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.kl-lg-w-40{
+    @include media-breakpoint-down(lg){
+        display: block;
+        width: 40px !important;
+    }
+}
+.kl-sect-flag-ship{
+    background: url('../images/shaping_change/bg.svg');
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position-x: right;
+    padding: 120px 0;
+    position: relative;
+    @include media-breakpoint-down(xl){
+        background-size: 100%;
+        padding: 40px 0;
+    }
+    .kl-svg-bottom-flag-ship{
+        position: absolute;
+        bottom: -10px;
+        right: 150px;
+        z-index: 9;
+        svg{
+            width: 135px;
+        }
+    }
+    .kl-svg-top-flag-ship{
+        position: absolute;
+        top: -80px;
+        right: 0;
+    }
+}
+.kl-flag-ship{
+    h2{
+        color: $black_primary;
+        font-size: 40px;
+        line-height: 52px;
+        font-weight: $bold;
+        margin-bottom: 32px;
+    }
+    p{
+        color: $gray_secondary;
+    }
+}
+
+.kl-img-flag-ship{
+    position: relative;
+    z-index: 9;
+    @include media-breakpoint-down(md){
+        margin-bottom: 70px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background: url(../images/shaping_change/bg_blue.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: -50px;
+        left: -20px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        @include media-breakpoint-down(md){
+            left: -10px;
+        }
+    }
+    img{
+        border: 1px solid rgba(215, 211, 210, 0.5);
+        border-radius: 10px 0px 0px 10px;
+        transform: matrix(1, 0, 0.01, 1, 0, 0);
+    }
+}
+.kl-title-40{
+    h2{
+        font-size: 40px;
+    }
+}
+.kl-card-lasted-project{
+    .kl-card-body-article{
+        .kl-cat-aricle{
+            p{
+                font-size: 14px;
+            }
+        }
+        .kl-title-card{
+            min-height: 80px;
+            @include media-breakpoint-down(xl){
+                min-height: 100px;
+            }
+            @include media-breakpoint-down(md){
+                min-height: 50px;
+            }
+        }
+    }
+}
+.kl-head-sect-lasted-project{
+    max-width: 400px;
+    .kl-svg-resp-wrap{
+        position: relative;
+        left: -70px;
+    }
+    .kl-title-third{
+        top: 30px;
+        @include media-breakpoint-down(md){
+            top: 0;
+        }
+    }
+}
+.kl-sect-lasted-project{
+    padding: 62px 0 92px;
+    background: $pink;
+    border-radius: 0px 0px 30px 30px;
+    position: relative;
+    &::after{
+        content: "";
+        background: url(../../../images/shaping_change/arrowDown.svg);
+        position: absolute;
+        right: 15px;
+        bottom: 25%;
+        width: 25px;
+        height: 84px;
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+    }
+}
+.kl-w-60{
+    width: 60px;
+}

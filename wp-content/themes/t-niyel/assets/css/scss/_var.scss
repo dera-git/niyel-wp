@@ -1,0 +1,68 @@
+$white: #fff;
+$black_primary: #2A2422;
+$black: #000;
+$fushia_primary: #BB6BD9;
+$blue_primary:#5762C7;
+$blue_secondary:#5E71B0;
+$blue_third:#ADB5F8;
+$blue_fourth:#CEEAF7;
+$blue_light_primary:#A4A1B5;
+$orange_primary:#EF8400;
+$yellow_secondary:#F9B500;
+$yellow_third:#F1F192;
+$red_primary:#E92D2D;
+$green_secondary:#C2CC00;
+$gray_secondary:#494E54;
+$purple_primary:#A130B4;
+$gray_tertiary: #8F8F8F;
+$gray_quaternary: #D7D3D2;
+$gray_quinternary: #A4A1B5;
+$pink: #fdf0cf;
+$bg_input: #FFFEFD;
+$color_placeholder: #8D8D8D;
+
+
+$theme_colors: (
+        "white": $white,
+        "black-primary": $black_primary,
+        "black": $black,
+        "fushia-primary": $fushia_primary,
+        "blue-primary": $blue_primary,
+        "blue-secondary": $blue_secondary,
+        "blue-light-primary": $blue_light_primary,
+        "blue-third": $blue_third,
+        "blue-fourth": $blue_fourth,
+        "orange-primary": $orange_primary,
+        "yellow-secondary": $yellow_secondary,
+        "yellow-third": $yellow_third,
+        "red-primary": $red_primary,
+        "green-secondary": $green_secondary,
+        "gray-secondary": $gray_secondary,
+        "purple-primary": $purple_primary,
+        "gray-tertiary": $gray_tertiary,
+);
+
+$regular: 400;
+$bold: 700;
+$semi_bold: 600;
+$medium:500;
+$extra_bold:800;
+$extra_bolder:900;
+
+$font_primary: "DM Sans";
+$font_secondary: "brevia", sans-serif;
+$font_third: "Mansalva";
+$font_fourth: "Gloria Hallelujah";
+$font_fifth: 'Poppins', sans-serif;
+$font_six_font: 'Lato', sans-serif;
+
+$enable-negative-margins: true;
+$grid-breakpoints: ( xxs:320px, xs:375px, xsm:480px, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl_1366: 1366px, xxl: 1400px, xxl_1440: 1440px);
+
+
+$animation_delay: (
+        "0" : 0,
+        "0p5" : 0.5,
+        "1p5" : 1.5,
+        "2p5" : 2.5,
+);

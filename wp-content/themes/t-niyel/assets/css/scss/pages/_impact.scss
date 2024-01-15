@@ -1,0 +1,114 @@
+.kl-sect-other-project{
+    padding: 86px 0 75px;
+}
+.kl-title-animate-left{
+    position: absolute;
+    left: 15%;
+    top: -50%;
+    @include media-breakpoint-down(md){
+        left: 0;
+    }
+}
+.kl-sect-cat-other-project{
+    padding-top: 20px;
+    overflow: hidden;
+    border-bottom-left-radius: 30px;
+    @include media-breakpoint-down(md){
+        padding-bottom: 70px;
+    }
+    .kl-variable-width{
+        content: "";
+        position: absolute;
+        top: 20px;
+        left: 0;
+        background: rgba($white, 0.5);
+        width: 0;
+        height: 100%;
+        @include media-breakpoint-down(md){
+            display: none;
+        }
+    }
+}
+.kl-nav-cat-other-project{
+    max-width: 200px;
+    p{
+        font-size: 16px;
+        font-weight: $medium;
+        text-transform: uppercase;
+    }
+    .kl-item-other-projetc{
+        list-style: none;
+        // padding: 0 180px 0 0;
+        .kl-list-other-project{
+            display: flex;
+            align-items: center;
+            margin-bottom: 39px;
+            position: relative;
+            a{
+                font-size: 16px;
+                font-weight: $medium;
+                color: $gray_secondary;
+                &.active{
+                    color: $black;
+                }
+            }
+            &.active, &:hover{
+                a{
+                    color: $black;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            .kl-marker-list-cat{
+                position: absolute;
+                left: -40px;
+            }
+
+        }
+    }
+}
+
+.kl-bg-white-other-project{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: -30px;
+    @include media-breakpoint-down(lg){
+        left: 0;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+}
+.kl-position-svg-other-project{
+    position: absolute;
+    top: 5px;
+    left: 5%;
+}
+
+.kl-desc-cat-other{
+    .kl-description{
+        width: 325px;
+        @include media-breakpoint-down(md){
+            width: inherit;
+        }
+        p{
+            margin-bottom: 0;
+            font-weight: $medium;
+        }
+    }
+}
+.kl-col-bg-customer{
+    overflow: hidden;
+}
+.kl-custom-col{
+    margin-bottom: 140px;
+    min-height: 630px;
+    @include media-breakpoint-down(lg){
+        margin-bottom: 40px;
+    }
+}

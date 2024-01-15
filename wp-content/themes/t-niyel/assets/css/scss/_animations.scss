@@ -1,0 +1,195 @@
+@each $color, $value in $theme_colors {
+  .kl-animate-scrible-svg.kl-color-#{$color}, .kl-animate-svg-two.kl-color-#{$color}, .kl-animate-svg-visible-one.kl-color-#{$color},  .kl-animate-svg-visible-two.kl-color-#{$color} {
+    @include anim_scrible_svg($value);
+  }
+}
+
+.kl-animate-svg-visible-one{
+  path{
+    stroke-width: 1;
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: draw_svg 8s infinite ease-in;
+    fill-opacity: 0;
+  }
+}
+
+.kl-animate-svg-visible-two{
+  path{
+    stroke-width: 1;
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: draw_svg_two 8s infinite ease-in;
+    fill-opacity: 0;
+  }
+}
+
+.kl-animate-scrible-svg{
+  svg{
+    path{
+      stroke-width: 1;
+      stroke-dasharray: 2300;
+      stroke-dashoffset: 2300;
+      animation: draw_svg 8s infinite ease-in;
+      fill-opacity: 0;
+    }
+  }
+}
+
+.kl-animate-cercle-1{
+  path{
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: draw_svg_one 8s infinite ease-in;
+    fill-opacity: 0;
+  }
+}
+
+.kl-animate-cercle-2{
+  path{
+    stroke-dasharray: 2300;
+    stroke-dashoffset: 2300;
+    animation: draw_svg_two 8s infinite ease-in;
+    fill-opacity: 0;
+  }
+}
+
+
+@keyframes draw_svg {
+  0% {
+    stroke-dashoffset: 2300px;
+    fill-opacity: 0;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+.kl-hover-size-up{
+  transition: all ease 0.5s;
+  &:hover{
+    transform: scale(1.05);
+  }
+}
+
+.kl-text-replace-random {
+  display: inline-block;
+  width: auto;
+  animation: animation-letter 4s ease-out forwards;
+  animation-delay: 0s;
+}
+
+@keyframes animation-letter {
+  0% {
+      margin-left: 2.5px;
+      letter-spacing: 2.2px;
+  }
+
+  5% {
+      margin-left: -2px;
+      letter-spacing: -1.2px;
+  }
+
+  7% {
+    margin-left: -1px;
+    letter-spacing: 0px;
+  }
+
+  8% {
+      margin-left: 0.3px;
+      letter-spacing: 0.2px;
+  }
+
+  9% {
+    margin-left: -0.15px;
+    letter-spacing: -0.1px;
+  }
+
+  10% {
+    margin-left: 0px;
+    letter-spacing: 0px;
+  }
+}
+
+@keyframes slidedown {
+  0% {
+    opacity: 50;
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  7% {
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  20% {
+    transform: translateY(0);
+    opacity: 100;
+  }
+}
+
+
+@keyframes draw_svg_one {
+  0% {
+    stroke-dashoffset: 2300px;
+    fill-opacity: 0;
+  }
+  25% {
+    fill-opacity: 1;
+  }
+  50% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw_svg_two {
+  50% {
+    stroke-dashoffset: 2300px;
+    fill-opacity: 0;
+  }
+  75% {
+    fill-opacity: 1;
+  }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+  }
+}
+
+.kl-writing-machine span {
+  visibility: hidden;
+  margin: 0;
+}
+
+.kl-writing-machine.show span {
+  visibility: visible;
+  transition-delay: calc(var(--index) / 10);
+}
+
+.kl-writing-machine.show span.blink:last-child {
+  visibility: hidden;
+  animation: writing-machine-blink 1s linear infinite;
+  animation-delay: calc(var(--index) / 10);
+  animation-timing-function: step-end;
+}
+
+.kl-writing-machine.show span:not(.blink):last-child {
+  display: none;
+}
+
+@keyframes writing-machine-blink {
+  50% {
+    visibility: visible;
+  }
+}

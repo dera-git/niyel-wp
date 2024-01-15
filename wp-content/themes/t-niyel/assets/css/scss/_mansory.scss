@@ -1,0 +1,21 @@
+$gutter_grid_press : 30px;
+.kl-grid-mansory-press{
+  @include media-breakpoint-up(md){
+    margin: 0 calc(-#{$gutter_grid_press} / 2);
+  }
+  .kl-grid-item{
+    width: calc(33.3333333% - #{$gutter_grid_press});
+    margin: calc(#{$gutter_grid_press} / 2);
+  }
+  @include media-breakpoint-down(xl){
+    .kl-grid-item{
+      width: calc(50% - #{$gutter_grid_press});
+    }
+  }
+  @include media-breakpoint-down(md){
+    .kl-grid-item{
+      width: calc(100%);
+      margin: calc(#{$gutter_grid_press} / 2) 0;
+    }
+  }
+}

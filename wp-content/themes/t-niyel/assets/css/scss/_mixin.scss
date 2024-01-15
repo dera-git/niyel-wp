@@ -1,0 +1,199 @@
+//color
+@mixin color_variant($color) {
+  color: $color !important;
+}
+
+//bg color
+@mixin bg_variant($bg) {
+  background-color: $bg !important;
+}
+
+@mixin bg_variant_body($bg) {
+  background-color: rgba($bg, 0.9) !important;
+}
+
+@mixin title_third($color) {
+  color: $color;
+}
+
+@mixin btn_bordered($color) {
+  background: transparent;
+  border: 1px solid $color;
+  color: $color !important;
+  transition: all ease 0.5s;
+  &:hover{
+    color: $white !important;
+    background: $color !important;
+  }
+  &.active{
+    color: $white !important;
+    background: $color !important;
+  }
+}
+
+@mixin btn_radio_bordered($color){
+  input{
+    &:checked{
+      & ~ label{
+        color: $white !important;
+        background: $color !important;
+      }
+    }
+  }
+  label{
+    background: transparent;
+    border: 1px solid $color;
+    color: $color !important;
+    transition: all ease 0.5s;
+    &:hover{
+      color: $white !important;
+      background: $color !important;
+    }
+  }
+}
+
+@mixin btn_plus($color) {
+  svg{
+    path{
+      fill: $color;
+      transition: all ease 0.5s;
+    }
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    svg{
+      path{
+        fill: darken($color, 10%);
+      }
+    }
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+@mixin mask_img($url, $width, $height){
+  -webkit-mask-image: url($url);
+  mask-image:url($url);
+  -webkit-mask-repeat:no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: $width $height;
+  mask-size: $width $height;
+}
+
+@mixin anim_scrible_svg($color){
+  fill: $color;
+  stroke: $color;
+  svg {
+    fill: $color;
+    stroke: $color;
+    path{
+      fill: $color;
+      stroke: $color;
+    }
+  }
+}
+
+@mixin fill_polyline($color){
+  polyline{
+    fill: transparent;
+    stroke:$color !important;
+  }
+}
+
+@mixin fill_path($color){
+  path{
+    fill: transparent;
+    stroke:$color !important;
+  }
+}
+
+@mixin btn_filter_link($color) {
+  .kl-link{
+    color: $color !important;
+  }
+}
+
+@mixin btn_border-secondary($color) {
+  color: $color !important;
+  border: 1.35px solid $color !important;
+  font-weight: $bold;
+  &:hover{
+    //color: $white !important;
+    background: $color !important;
+    @if ( lightness($color) > 50% ) {
+      color: $black_primary !important;
+    }@else{
+      color: $white !important;
+    }
+  }
+}
+
+
+@mixin default_btn_ovl_bg{
+  position: relative;
+  display: inline-block;
+  svg{
+    width: 100%;
+    height: 100%;
+  }
+  .kl-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@mixin text_stroke($color){
+  color: $color;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.852px $color;
+}
+
+@mixin button_variant($color){
+  background: $color;
+  color: $white;
+  &:hover{
+    background-color: darken($color, 8%);
+  }
+}
+
+@mixin border_list($color){
+  .kl-border-item{
+    svg{
+      path{
+        fill: $color;
+      }
+      line{
+        stroke: $color;
+      }
+    }
+  }
+}
+
+@mixin  pagination_variant($color){
+  color: $blue_light_primary;
+  .kl-page-name, .kl-pagination-link{
+    color: $color;
+    path{
+      stroke: $color;
+    }
+  }
+  .kl-pagination-link{
+    &:hover, &.active{
+      path{
+        stroke: $blue_primary;
+      }
+    }
+  }
+}
+
+@mixin title_card_article($color){
+  color: $color;
+  path{
+    fill:$color;
+  }
+}

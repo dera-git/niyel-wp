@@ -1,0 +1,104 @@
+//display
+.kl-kl-blc-figure-display{
+  position: relative;
+  .kl-indication-top{
+    position: absolute;
+    left: 15%;
+    transform: translateX(-15%);
+    top: -5%;
+    z-index: 5;
+    @include media-breakpoint-down(sm){
+      top: -40px;
+      .kl-arrow{
+        max-width: 44px;
+      }
+    }
+  }
+}
+.kl-figure-display{
+  .kl-img-mask{
+    @include mask_img('../images/mask/mask-display.png', 100%, 100%);
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+  }
+  .kl-block-img-display{
+    position: relative;
+    .kl-decor-outline{
+      position: absolute;
+      z-index: 1;
+      bottom: -15px;
+      left: 0;
+      @include media-breakpoint-down(md){
+        bottom: 0;
+      }
+    }
+    .kl-decor{
+      position: absolute;
+      top: 16%;
+      transform: translate(-9%, -16%);
+      left: 9%;
+      z-index: 2;
+      opacity: 0.6;
+      @include media-breakpoint-down(lg){
+        max-width: 65px;
+      }
+    }
+    .kl-decor-right{
+      position: absolute;
+      right: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 2;
+      @include media-breakpoint-down(xl){
+        max-width: 80px;
+        right: -40px;
+      }
+    }
+  }
+}
+
+.kl-block-fig-mask-one{
+  position: relative;
+  .kl-decor{
+    position: absolute;
+    right: -15px;
+    bottom: 0;
+  }
+  .kl-btn-plus{
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+  .kl-img-mask{
+    @include mask_img('../images/mask/mask-about-ours.png', 100%, 100%);
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+  }
+  @include media-breakpoint-down(lg){
+    .kl-btn-plus{
+      left: -10px;
+    }
+  }
+  @include media-breakpoint-down(md){
+    .kl-btn-plus{
+      top: 0;
+      transform: translateY(0);
+      left: 20%;
+    }
+  }
+  @include media-breakpoint-down(sm){
+    .kl-decor{
+      width: 95px;
+      right: 0;
+    }
+  }
+  @include media-breakpoint-down(xsm){
+    .kl-btn-plus{
+      left: 15%;
+    }
+  }
+}

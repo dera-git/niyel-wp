@@ -1,0 +1,156 @@
+@mixin text_64{
+  font-size: 64px;
+  line-height: 1.35em;
+  @include media-breakpoint-down(xxl_1366){
+    font-size: 54px;
+  }
+  @include media-breakpoint-down(xl){
+    font-size: 40px;
+  }
+  @include media-breakpoint-down(md){
+    font-size: 32px;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 30px;
+  }
+}
+
+@mixin text_60{
+  font-size: 60px;
+  line-height: 1.16em;
+  @include media-breakpoint-down(xxl_1366){
+    font-size: 52px;
+  }
+  @include media-breakpoint-down(xl){
+    font-size: 38px;
+  }
+  @include media-breakpoint-down(md){
+    font-size: 30px;
+  }
+  @include media-breakpoint-down(xs){
+    font-size: 28px;
+  }
+}
+
+
+@mixin text_48{
+  font-size: 48px;
+  line-height:  1.35em;
+  @include media-breakpoint-down(xl){
+    font-size: 32px;
+  }
+  @include media-breakpoint-down(md){
+    font-size: 22px;
+  }
+}
+
+@mixin text_40{
+  font-size: 40px;
+  line-height:  1.35em;
+  @include media-breakpoint-down(lg){
+    font-size: 35px;
+  }
+  @include media-breakpoint-down(md){
+    font-size: 25px;
+  }
+}
+
+@mixin text_36{
+  font-size: 36px;
+  line-height:  1.3em;
+  @include media-breakpoint-down(md){
+    font-size: 26px;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 24px;
+  }
+}
+
+@mixin text_32{
+  font-size: 32px;
+  line-height:  1.2em;
+  @include media-breakpoint-down(md){
+    font-size: 24px;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 22px;
+  }
+}
+
+@mixin text_27{
+  font-size: 27px;
+  line-height:  1.07em;
+  @include media-breakpoint-down(md){
+    font-size: 20px;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 16px;
+  }
+}
+
+@mixin text_26{
+  font-size: 26px;
+  line-height:  1.26em;
+  @include media-breakpoint-down(md){
+    font-size: 20px;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 18px;
+  }
+}
+
+@mixin text_24{
+  font-size: 24px;
+  line-height: 1.29em;
+  @include media-breakpoint-down(md){
+    font-size: 18px;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 16px;
+  }
+}
+
+@mixin text_20{
+  font-size: 20px;
+  line-height: 1.2em;
+  @include media-breakpoint-down(md){
+    font-size: 17px;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 15px;
+  }
+}
+
+@mixin text_18{
+  font-size: 18px;
+  line-height:  1.2em;
+  @include media-breakpoint-down(md){
+    font-size: 14px;
+  }
+  @include media-breakpoint-down(sm){
+    font-size: 12px;
+  }
+}
+
+@mixin text_16{
+  font-size: 16px;
+  line-height: 1.25em;
+  @include media-breakpoint-down(sm){
+    font-size: 12px;
+  }
+}
+@mixin text_15{
+  font-size: 15px;
+  line-height: 1.25em;
+  @include media-breakpoint-down(sm){
+    font-size: 12px;
+  }
+}
+
+@mixin text_14{
+  font-size: 14px;
+  line-height: 1.2em;
+  @include media-breakpoint-down(md){
+    font-size: 11px;
+  }
+}
